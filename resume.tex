@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+\usepackage{cmbright}
+% \usepackage{fontenc}
+% \usepackage{times}
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+{\fontfamily{cmbr}\selectfont\textbf{\Huge\scshape Mekaeel Malik}}
+\\ \vspace{3pt}
+    \small 647-712-4597 $|$ \href{mailto:mekaeel.r.malik@gmail.com}{\underline{mekaeel.r.malik@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/mekaeel-m/}{\underline{linkedin.com/in/mekaeel-m}} $|$
+    \href{https://github.com/mekaeel-m}{\underline{github.com/mekaeel-m}}
+\end{center}
+\vspace*{-15pt}  % Adjust as needed
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {McMaster University}{Hamilton, ON}
+      {Pursuing a Bachelor of Computer Science, Minor in Innovation. MES Council Representative}{Sept. 2024 -- present}
+      \resumeItemListStart
+        \resumeItem{Key Courses: Software Development, Data Structures \& Algorithms, Web Development, Logical Reasoning}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+      \resumeSubheading
+      {Software Engineer Intern/Coop} {May 2025 -- August 2025}
+      {TD Bank Canada}{Hybrid / Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Delivered a scalable solution for on-demand event processing, addressing high-volume authentication needs (\textbf{100,000+ monthly requests}) by developing and deploying \textbf{RESTful API} using Spring Framework.}
+        \resumeItem{Realized a \textbf{50\% reduction in API load time} by identifying API bottlenecks and implementing \textbf{pre-caching} for overlapping data using Spring Data.}
+        \resumeItem{Collaborated with senior team members to reduce data overload through \textbf{database normalization} cutting \textbf{database size by 10\%+} and reducing \textbf{API response size by 5\%}.}
+        \resumeItem{Assisted with development of API adapter to r\textbf{educe unnecessary sub-calls by 60\%} through consolidation.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Undergraduate Research Assistant} {August 2025 -- Present}
+      {McMaster University}{Hamilton, ON}
+      \resumeItemListStart
+        \resumeItem{Collaborated with faculty and research team to design machine learning models \textbf{predicting NBA player injury risk}, generating \textbf{actionable insights} for performance and risk management.}
+        \resumeItem{Collected datasets from web and API sources using \textbf{Selenium} and Beautiful Soup. Cleaned and \textbf{merged datasets using SQL} to build analysis-ready tables.}
+        \resumeItem{Trained and evaluated Scikit-learn models on \textbf{10,000+ NBA game logs and injury reports} using Python to identify player health and injury trends.}
+        \resumeItem{Contributed to \textbf{forthcoming research publication} by documenting methodology, experimental results, and recommendations for broader applications of predictive analytics.}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Developer - Summer Intern} {July 2024 -- August 2024}
+      {Infinite Investment Systems}{Toronto, ON}
+      \resumeItemListStart
+        \resumeItem{Created \textbf{browser-based testing of internal sites} using Selenium increasing test coverage by 30\%.}
+        \resumeItem{Wrote integration tests for API endpoints utilizing \textbf{Requests library} to decreasing runtime by 10ms.}
+        \resumeItem{Met internal testing needs by creating testing data using Faker and Pandas to \textbf{generate 50+ GBs of data.}}
+    \resumeItemListEnd
+    
+      
+% -----------Multiple Positions Heading-----------
+   % \resumeSubSubheading
+   %  {Software Engineer I}{Oct 2014 - Sep 2016}
+   %  \resumeItemListStart
+   %     \resumeItem{Apache Beam}
+   %       {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+   %  \resumeItemListEnd
+   % \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Database Administrator}{June 2022 -- Sept. 2022}
+      {Penny Appeal Canada}{Mississauga, ON}
+        \resumeItemListStart
+        \resumeItem{Managed \textbf{data migration} into CRM system, automating through UIPath \textbf{Robotic Process Automation}}
+        \resumeItem{Contributed to website campaigns developing \textbf{front-end development} skills using HTML/CSS }
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{RapidReport} $|$ Accessibility Report Assistant $|$ \emph{Cohere, Google API, Next.js, TypeScript, Tailwind}}{DeltaHacks 2025}
+          \resumeItemListStart
+            \resumeItem{Developed \textbf{accessibility reporting web application} allowing users to document infrastructure issues through image uploads with AI-generated professional emails to businesses and government entities.}
+            \resumeItem{Built frontend using \textbf{Next.js and Tailwind CSS} with screen reader compatibility and optimized color contrast for users with diverse accessibility needs.}
+            \resumeItem{Utilized Google Geocode API to \textbf{automatically identify} and \textbf{route reports to nearest relevant recipients}.}
+            \resumeItem{Integrated Cohere AI NLP to \textbf{generate professional emails} from uploaded images and text prompts.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Plant Pals} $|$ IoT Plant Monitor $|$ \emph{Arduino, HTML, CSS, JavaScript}}{Hack The North 2022}
+          \resumeItemListStart
+            \resumeItem{Collaborated to build \textbf{IoT plant monitoring system} integrating Arduino sensors with web dashboard.}
+            \resumeItem{Resolved hardware compatibility issues through \textbf{adaptive problem-solving} developing my Arduino skills}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, PostgreSQL, JavaScript, TypeScript, HTML/CSS} \\
+     \textbf{Developer Tools}{: Git, VS Code, Cursor, GitHub, Visual Studio, PyCharm, JIRA, Jupyter Notebook} \\ 
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, Selenium, Dask, Beautiful Soup, Faker, Requests, Spring Framework, React}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+
+\end{document}
